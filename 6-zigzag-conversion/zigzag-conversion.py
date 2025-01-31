@@ -5,7 +5,7 @@ class Solution(object):
         :type numRows: int
         :rtype: str
         """
-        if numRows == 1:
+        if numRows <= 1 or numRows >= len(s):
             return s
 
         m = [[] for _ in range(numRows)]
