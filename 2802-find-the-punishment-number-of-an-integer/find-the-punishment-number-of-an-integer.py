@@ -6,9 +6,10 @@ class Solution(object):
         """
         count = 0
         for i in range(1, n + 1):
-            s = str(i * i)
+            square = i * i
+            s = str(square)
             if self.backtrack(s, 0, 0, i):
-                count += i * i 
+                count += square
 
         return count
     
