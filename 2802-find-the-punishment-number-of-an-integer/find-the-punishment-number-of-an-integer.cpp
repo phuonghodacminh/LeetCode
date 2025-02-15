@@ -1,12 +1,6 @@
 class Solution {
 public:
     int punishmentNumber(int n) {
-        // int arr[] = {1,9,10,36,45,55,82,91,99,100,235,297,369,370,379,414,657,675,703,756,792,909,918,945,964,990,991,999,1000};
-        // for (int i = 1; i < 29; i++){
-        //     arr[i] = arr[i - 1] + arr[i] * arr[i];
-        //     cout << arr[i] << endl;
-        // }
-        // return 0;
         if (n < 9) return 1;
         else if(n < 10) return 82;
         else if(n < 36) return 182;
