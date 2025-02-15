@@ -6,12 +6,10 @@ class Solution(object):
         """
         count = 0
         for i in range(1, n + 1):
-            square = i * i
-            s = str(square)
+            s = str(i * i)
             if self.backtrack(s, 0, 0, i):
-                print(square)
-                count += square 
-                
+                count += i * i 
+
         return count
     
     def backtrack(self, s, idx, check, i):
